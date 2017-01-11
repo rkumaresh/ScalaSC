@@ -1,0 +1,39 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Scala template
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# ENSIME specific
+.ensime_cache/
+.ensime
+
+.DS_Store
+.gitignore
+.idea/workspace.xml
+branches/
+objects/
+project/project/
+project/src/
+project/target/
+refs/
+src/main/java/
+src/main/resources/
+src/main/scala/
+src/test/java/
+src/test/resources/
+src/test/scala/
