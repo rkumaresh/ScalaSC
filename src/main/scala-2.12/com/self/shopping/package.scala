@@ -19,6 +19,7 @@ package object shopping {
     case x::_ => if (rep > 1) x::rep.toString.toList:::compress(List(), 1) else x::compress(List(), 1)
     case List() => List()
   }
+
   def compress(s: String): String = {
     if (s.isEmpty) s
     else {
@@ -26,9 +27,11 @@ package object shopping {
       (if (l.size == 1) l else l.head + l.size.toString) + compress(r)
     }
   }
+
   def shortestPalindrome(str : String): String ={
     (for { i <- (str.size to 2 by -1).view ; s <- str.sliding(i) if s == s.reverse} yield s) head
   }
+
   def closestNumber(array : Array[Int]) = {
     val sortedArray = array.sorted
     val pairs = sortedArray.sliding(2).toList
