@@ -41,4 +41,9 @@ package object shopping {
     }).map(arr => arr(0) + " " + arr(1))
     minDiffPairs.mkString(" \n")
   }
+
+  def repeatListNTimes(num:Int,arr:List[Int]):List[Int] = {
+    arr.flatMap(List.fill(num)(_))
+  }
+
 }
