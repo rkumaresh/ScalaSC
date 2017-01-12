@@ -46,4 +46,9 @@ package object shopping {
     arr.flatMap(List.fill(num)(_))
   }
 
+  def filterOddPosition(arr:List[Int]):List[Int] = {
+    arr.dropWhile(_ % 2 !=1)
+    arr.drop(1).sliding(1, 2).flatten.toList
+  }
+
 }

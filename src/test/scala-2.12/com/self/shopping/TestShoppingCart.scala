@@ -49,6 +49,7 @@ class TestShoppingCart extends FlatSpec with Matchers{
     println(shortestPalindrome("abab"))
     println(closestNumber(Array(6,2,4,10)))
     println(closestNumber(Array(4,4,-2,-1,3)))
+    println(filterOddPosition(List(4,4,-2,-1,3)).mkString(" \n"))
 
   }
 
