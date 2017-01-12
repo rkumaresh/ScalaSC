@@ -3,7 +3,7 @@ package com.self.shopping
 import com.self.shopping.offer.Offer
 
 /**
-  * Created by rangak on 10/01/2017.
+  * Created by rangak on 12/01/2017.
   */
 class ShoppingCart(val itemList: List[Item], val offers: List[Offer]) {
 
@@ -16,5 +16,8 @@ class ShoppingCart(val itemList: List[Item], val offers: List[Offer]) {
     val offerPrice = offers.map(offer => offer.calculatePrice(itemList)).sum
     totalPrice - offerPrice
   }
+
+
+
 
 }

@@ -3,9 +3,9 @@ package com.self.shopping.offer
 import com.self.shopping.Item
 
 /**
-  * Created by rangak on 10/01/2017.
+  * Created by rangak on 12/01/2017.
   */
-abstract class Offer(unit: Unit) {
+abstract class Offer {
 
   def calculatePrice(itemList : List[Item]) : BigDecimal
 }

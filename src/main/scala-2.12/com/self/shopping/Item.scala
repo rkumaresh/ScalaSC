@@ -1,7 +1,7 @@
 package com.self.shopping
 
 /**
-  * Created by rangak on 10/01/2017.
+  * Created by rangak on 12/01/2017.
   */
 case class Item(val id: Int, val name:String, val price : BigDecimal)
 
