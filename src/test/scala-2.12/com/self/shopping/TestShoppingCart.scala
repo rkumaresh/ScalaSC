@@ -47,9 +47,13 @@ class TestShoppingCart extends FlatSpec with Matchers{
 
     println(isPangram(1, List("we promtly judged antique ivory buckles for the next prie")))
     println(shortestPalindrome("abab"))
+    val l = List(3,2,4,6,5,7,8,0,1)
     println(closestNumber(Array(6,2,4,10)))
     println(closestNumber(Array(4,4,-2,-1,3)))
-    println(filterOddPosition(List(4,4,-2,-1,3)).mkString(" \n"))
+    println(stringMingling(Array("abc","def")))
+    println(filterOddPosition(l).mkString(" \n"))
+    println(sumOfOddElements(l).mkString(" \n"))
+    println(stringPermutePrintln(Array("asdafd")))
 
   }
 

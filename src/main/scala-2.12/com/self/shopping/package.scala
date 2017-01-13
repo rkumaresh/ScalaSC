@@ -47,8 +47,34 @@ package object shopping {
   }
 
   def filterOddPosition(arr:List[Int]):List[Int] = {
+    println( "Input : " +  arr.mkString(" "))
     arr.dropWhile(_ % 2 !=1)
+    println( "Sliding(1,2) : " +  List(3,2,4,6,5,7,8,0,1).sliding(1,2).mkString(" "))
+    println( "Sliding(1,2) sum : " +  List(3,2,4,6,5,7,8,0,1).sliding(1,2).flatten.sum)
     arr.drop(1).sliding(1, 2).flatten.toList
   }
+  def sumOfOddElements(arr:List[Int]):List[Int] = {
+    val l = List(3,2,4,6,5,7,8,0,1)
+    println( "Input : " +  l.mkString(" "))
+    val filter = l.filter(_ % 2 != 0)
+    println( "filter Odd elements : " +  filter.mkString(" "))
+    println( "filter Odd elements sum : " +  l.filter(_% 2 != 0).sum)
+    filter
+  }
 
+  def stringMingling(array : Array[String]) = {
+    ((array(0), array(1)).zipped).map((x, y) => "" + x + y).mkString("")
+  }
+
+//  def stringPermute(array : Array[String]) :String = {
+//    val by = array(0).reduceLeft((_)reverse(_,_))
+//    def reverse(a:Char, b:Char):String = "" + b + a
+//    by
+//  }
+
+  def stringPermutePrintln(array : Array[String]) {
+    val by = array(0).reduceLeft((a,b) => rev(a,b))
+    def rev(a:Char, b:Char):String = "" + b + a
+    println(by)
+  }
 }
